@@ -1,0 +1,69 @@
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background: $white;
+
+    @media screen and (max-width: 620px) {
+        grid-template-columns: 1fr;
+    }
+
+    .chef {
+        margin: 20px;
+        border: 1px dashed $color1;
+        text-align: center;
+
+        h3 {
+            color: $color1;
+            font-family: $font1;
+            font-size: 1.8rem;
+            font-weight: 100;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-family: $font2;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            margin-top: -10px;
+        }
+
+        img {
+            margin: 40px 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            padding: 0 20px;
+            font-weight: 100;
+        }
+
+        .chef1 {
+            height: 70px;
+            border-radius: 50px;
+        }
+
+        .h4-chef {
+            font-family: $font2;
+            font-weight: 500;
+            margin-top: -30px;
+        }
+
+        h5 {
+            color: $grey;
+            font-weight: 100;
+            text-transform: uppercase;
+            font-size: 0.6rem;
+            padding-bottom: 40px;
+        }
+    }
+
+    .img-main-droite {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: 620px) {
+            display: none;
+        }
+    }
+}

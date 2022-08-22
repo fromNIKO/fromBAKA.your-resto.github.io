@@ -1,0 +1,127 @@
+.section-plat {
+    padding: 40px 0 0;
+    margin-bottom: 130px;
+    position: relative;
+
+    &::after {
+        content: "";
+        background: url(/assets/img/bg-menu-01.jpg) center/cover;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        left: 0;
+        top: 40%;
+        z-index: 1;
+
+        @media screen and (max-width: 590px) {
+            top: 63%;
+        }
+    }
+
+    h3 {
+        color: $color1;
+        font-family: $font1;
+        font-weight: 100;
+        font-size: 2rem;
+    }
+
+    .logo {
+        height: 20px;
+        margin: 20px 0;
+    }
+
+    .ul-plat {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1300px;
+        width: 70%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 590px) {
+            width: 90%;
+            font-size: 0.8rem;
+        }
+
+        li {
+            color: $white;
+            border-bottom: 1px solid $white;
+            padding-bottom: 5px;
+            cursor: pointer;
+            margin-bottom: 60px;
+
+        }
+    }
+
+    .container-plat {
+        max-width: 1300px;
+        background: $white;
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        z-index: 100;
+        width: 85%;
+        margin: 0 auto;
+        max-width: 800px;
+        border-top: 4px solid $color1;
+        padding: 15px 0;
+
+        @media screen and (max-width: 590px) {
+            grid-template-columns: 1fr;
+        }
+
+        .plat-solo {
+            display: grid;
+            grid-template-columns: 25% 60% 15%;
+            text-align: left;
+            padding: 20px 0;
+            border-bottom: 1px dashed $grey;
+            margin: 0 20px;
+
+            img {
+                border-radius: 50px;
+                object-fit: cover;
+                width: 100%;
+                align-self: center;
+            }
+
+            .text-mid {
+                display: flex;
+                justify-content: center;
+                text-align: left;
+                flex-direction: column;
+                margin: 15px 10px 0;
+                height: 100%;
+                color: $black;
+
+
+                h4 {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-family: $font2;
+                    font-size: 0.8rem;
+                    margin-bottom: 5px;
+                }
+
+                h5 {
+                    font-size: 1rem;
+                    font-weight: 100;
+                    display: grid;
+                    height: 100%;
+                }
+
+            }
+            p {
+                color: $color1;
+                font-size: 1.1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $font2;
+
+            }
+        }
+    }
+
+}

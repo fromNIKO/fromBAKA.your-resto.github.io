@@ -1,0 +1,116 @@
+.section-reservation {
+    text-align: center;
+    padding: 60px 0;
+
+    .container-reservation {
+        background: $white;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        max-width: 1300px;
+        margin: 0 auto;
+        width: 70%;
+
+        @media screen and (max-width: 916px) {
+            grid-template-columns: 1fr;
+        }
+
+        .time {
+            background: black;
+            color: $white;
+            padding: 20px;
+
+            .list {
+                border: 1px dashed $color1;
+                padding: 20px 0;
+
+                h4 {
+                    color: $color1;
+                    font-family: $font1;
+                    font-weight: 100;
+                    font-size: 2rem;
+                }
+
+                h3 {
+                    margin-top: -12px;
+                }
+
+                img {
+                    height: 20px;
+                    margin: 20px 0;
+                }
+
+                .titre-day {
+                    font-family: $font2;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    margin: 20px 0 40px;
+                }
+            }
+        }
+
+        .booking {
+            max-width: 1300px;
+            padding: 60px 0;
+
+            h4 {
+                color: $color1;
+                font-family: $font1;
+                font-size: 2rem;
+                font-weight: 100;
+            }
+
+            h2 {
+                color: $black;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-top: -10px;
+            }
+
+            img {
+                height: 20px;
+                margin: 30px 0 40px;
+            }
+
+            .form-reservation {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 90%;
+                margin: 0 auto;
+
+                @media screen and (max-width: 620px) {
+                    grid-template-columns: 1fr;
+                }
+
+                select,input {
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $grey;
+                    padding: 5px 20px 5px 0;
+                    margin: 10px 20px;
+                    background: transparent;
+                    width: 90%;
+                    text-align: left;
+                }
+
+            }
+            button {
+                text-transform: uppercase;
+                background: $black;
+                color: $white;
+                border-radius: 50px;
+                padding: 10px 40px;
+                margin: 30px 0 0;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
