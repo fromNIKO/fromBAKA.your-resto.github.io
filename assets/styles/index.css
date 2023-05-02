@@ -32,7 +32,7 @@ body {
 }
 
 header {
-  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  background: url(.../img/bg-slider-06.jpg) center/cover;
   color: #eee;
   padding: 0 50px;
 }
