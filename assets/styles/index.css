@@ -32,7 +32,6 @@ body {
 }
 
 header {
-  background: url(/assets/img/bg-slider-06.jpg) center/cover;
   color: #eee;
   padding: 0 50px;
 }
@@ -108,6 +107,7 @@ header .header-content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
 }
 header .header-content h2 {
   font-family: Allura, cursive;

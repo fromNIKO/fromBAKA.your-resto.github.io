@@ -1,5 +1,5 @@
 header {
-    background: url(assets/img/bg-slider-06.jpg) center/cover;
+    
     color: $white;
     padding: 0 50px;
 
@@ -80,6 +80,7 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background: url(/assets/img/bg-slider-06.jpg) center/cover;
 
             h2 {
                 font-family: $font1;
